@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Ordering</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #fff8f0;
+            text-align: center;
+        }
+        header {
+            background: #e64a19;
+            color: white;
+            padding: 25px;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 30px;
+        }
+        .food {
+            background: white;
+            padding: 20px;
+            width: 220px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ddd;
+        }
+        button {
+            background: #e64a19;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Food Ordering</h1>
+        <p>Fresh food, delivered with love!</p>
+    </header>
+
+    <h2>Our Menu</h2>
+
+    <div class="menu">
+        <div class="food">
+            <h3>🍕 Pizza</h3>
+            <p>₹199</p>
+            <button onclick="order('Pizza')">Order Now</button>
+        </div>
+        <div class="food">
+            <h3>🍔 Burger</h3>
+            <p>₹99</p>
+            <button onclick="order('Burger')">Order Now</button>
+        </div>
+        <div class="food">
+            <h3>🍜 Noodles</h3>
+            <p>₹149</p>
+            <button onclick="order('Noodles')">Order Now</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Online Food Ordering | Powered by Docker and Kubernetes</p>
+    </footer>
+
+    <script>
+        function order(food) {
+            alert("Thank you! Your " + food + " order has been selected.");
+        }
+    </script>
+</body>
+</html>
